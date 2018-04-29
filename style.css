@@ -9,7 +9,8 @@
   color: #fff;
   padding-left: 100px;
   font-weight: 30px;
-  /* align-items: center; */
+  padding-top: 30px;
+  /* padding-bottom: 30px; */
 }
 .navbar.navbar-default {
   /* height: 100px; */
@@ -18,22 +19,45 @@
   font-weight: 700;
 }
 .navbar-header {
-  height: 120px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .nav.navbar-nav li a {
   color: #fff;
   padding-right: 20px;
-  /* align-items: center; */
+  /* padding-top: 30px;
+  padding-bottom: 30px; */
 }
 .splash {
   text-align:center;
-  height: 300px;
-  background-color: #0da;
+  /* height: 300px; */
+  background-color: #18bc9c;
   color: #fff;
-  /* display: flex; */
+}
+.splash content {
+font-size: 40px;
+}
+.splash p {
+  font-size: 30px;
+  padding-bottom: 50px;
 }
 h1 {
-  /* align-items: center; */
+    font-weight: bold;
+    padding-top: 40px;
+    font-size: 80px;
+}
+.container.imeges {
+  text-align:center;
+
+}
+.container.imeges content {
+  font-size: 40px;
+}
+.container.imeges h2 {
+  font-weight: bold;
+  font-size: 40px;
+  text-transform: uppercase;
+  padding-top: 50px;
 }
 .images_item {
   padding: 10px;
@@ -43,17 +67,56 @@ h1 {
 }
 .green_hover {
   position: absolute;
-  background-color: rgb(24,188,156);
-  /* background-color: #18bc9c; */
-  opacity: 0;
+  background-color: rgb(24,188,156);  /*такая кодировка цвета, но без компонента
+                                   прозрачности,нужна для плавного перехода.
+                                    И еще добавляем отдельно прозрачность =0;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #18bc9c; */   /*это будет отрабатывать без плавного перехода*/
+  opacity: 0;  /*эта прозрачность нужна для организации плавного перехода*/
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  /* display: none; */
-  transition: all ease .5s;
+  /* display: none; */      /*это будет отрабатывать без плавного перехода*/
+  transition: all ease .5s; /*это отработка плавного перехода*/
 }
 div.container_img:hover div.green_hover {
-  /* display: block; */
-  opacity: 0.95;
+  /* display: block; */    /*это будет отрабатывать без плавного перехода*/
+  opacity: 0.95;   /*эта прозрачность будет у элемента после наведения мышки*/
+}
+.glyphicon-zoom-in {
+  font-size: 500%;
+  color: #fff;
+  opacity: 0.5;
+}
+.row.first {
+  background-color: #2c3e50;
+  color: #fff;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+.row.first h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom:15px;
+}
+.row.first p {
+  text-align: center;
+  font-size: 135%;
+}
+.row.first p a {
+  color: rgb(24,188,156);
+}
+.col-md-4.brand {
+  text-align: center;
+}
+.row.second {
+  background-color: #1a252f;
+  color: #fff;
+  padding-top:30px;
+  padding-bottom:30px;
+  position: relative;
 }
